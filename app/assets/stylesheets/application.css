@@ -33,3 +33,14 @@ p{
   padding: 0px 60px 30px;
 }
 
+/*show画面のcss*/
+h4{
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  margin:33px;
+}
+
+.show-edit-destroy{
+  
+}
