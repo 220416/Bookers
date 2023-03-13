@@ -20,8 +20,8 @@
   box-sizing: border-box;
 }
 
-/*top.htmlのcss*/
-h2{
+/*top画面*/
+.top-h2{
   display: block;
   font-size: 25px;
   font-weight: bold;
@@ -33,14 +33,34 @@ p{
   padding: 0px 60px 30px;
 }
 
-/*show画面のcss*/
+/*index画面*/
+.index-h1{
+  font-size: 25px;
+  margin: 17px 10px;
+  padding-left: 30px;
+}
+
+.index-h2{
+  font-size: 19.5px;
+  padding-left: 30px;
+}
+
 h4{
   display: block;
   font-size: 13px;
   line-height: 18px;
-  margin:33px;
+  padding-left: 30px;
+}
+td{
+  padding: 1px 5px 7px;
 }
 
-.show-edit-destroy{
-  
+.link{
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+.index-p{
+  padding-left: 30px;
+
 }

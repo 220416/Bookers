@@ -1,44 +1,28 @@
-<!DOCTYPE html>
-<html　lang="ja">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="application.css" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Bookers</title>
-</head>
-
-<body>
-<div>
-  <%= flash[:notice] %>
-</div>
-<h1>Books</h1>
+<h1 class="index-h1">Books</h1>
 
 <table>
   <thead>
     <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th colspan="3"></th>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
-
   <tbody>
-  <tr><% @books.each do |book| %></tr>
-  <tr><%= book.title %></tr>
-  <tr><%= book.body %></tr>
-
-  <tr class="show-edit-destroy">
-    <%= link_to "Show", book_path(book.id) %>
-    <%= link_to "Edit", edit_book_path(book.id) %>
-    <%= link_to "Destroy", book_path(book.id),method: :delete,  "data-confirm" => "Are you sure?"%>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.body %></td>
+        <td><%= link_to "Show", book_path(book.id), class: "link" %></td>
+        <td><%= link_to "Edit", edit_book_path(book.id), class: "link" %></td>
+        <td><%= link_to "Destroy", book_path(book.id), class: "link", method: :delete,  "data-confirm" => "Are you sure?"%></td>
+      </tr>
     <% end %>
-    </tr>
   </tbody>
 </table>
 
-<h1>New book</h1>
+<h2 class ="index-h2">New book</h2>
 <% if @book.errors.any? %>
   <%= @book.errors.count %> errors prohibited this book from being saved:
   <ul>
@@ -51,11 +35,9 @@
 
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
   <h4>Title</h4>
-  <%= f.text_field :title %>
+  <p class="index-p"><%= f.text_field :title %></p>
   <h4>Body</h4>
-  <%= f.text_area :body %>
+  <p class="index-p"><%= f.text_area :body %></p>
 
-  <%= f.submit 'Create Book' %>
+  <p class="index-p"><%= f.submit 'Create Book' %></p>
 <% end %>
-</body>
-</html>
