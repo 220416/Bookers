@@ -15,7 +15,7 @@
  */
 
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -28,21 +28,23 @@
   padding: 25px 35px;
 }
 
-p{
+.top-p{
   font-size: 13px;
   padding: 0px 60px 30px;
 }
 
 /*index画面*/
 .index-h1{
-  font-size: 25px;
+  font-size: 26px;
   margin: 17px 10px;
   padding-left: 30px;
+  font-weight: bold;
 }
 
 .index-h2{
   font-size: 19.5px;
-  padding-left: 30px;
+  margin: 17px 10px;
+  padding-left: 25px;
 }
 
 h4{
@@ -55,12 +57,66 @@ td{
   padding: 1px 5px 7px;
 }
 
+th{
+  font-size: 13px;
+  padding-left: 50px;
+}
+
+.title-body{
+  font-size: 13px;
+  padding-left: 30px;
+}
+
 .link{
   font-size: 13px;
-  padding-right: 5px;
+  padding-right: 0.5px;
 }
 
 .index-p{
   padding-left: 30px;
+}
 
+.index-p2{
+  padding-left: 30px;
+}
+
+/*show画面*/
+.show-h4{
+  display: inline-block;
+  font-size: 13px;
+  padding-left: 65px;
+}
+
+.show-p{
+  font-size: 13px;
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.showedit{
+  padding-left: 30px;
+}
+
+/*edit画面*/
+.edit-h1{
+ font-size: 26px; 
+ padding-top: 25px;
+ padding-left: 30px;
+}
+
+.edit-p{
+  display: inline-block;
+  font-size: 13px;
+}
+
+.edit-box{
+  padding-left: 30px;
+}
+
+.edit-update{
+  padding-left: 30px;
+}
+
+.editshow{
+  padding-left: 30px;
 }

@@ -12,8 +12,8 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
-        <td><%= book.title %></td>
-        <td><%= book.body %></td>
+        <td class = "title-body"><%= book.title %></td>
+        <td class = "title-body"><%= book.body %></td>
         <td><%= link_to "Show", book_path(book.id), class: "link" %></td>
         <td><%= link_to "Edit", edit_book_path(book.id), class: "link" %></td>
         <td><%= link_to "Destroy", book_path(book.id), class: "link", method: :delete,  "data-confirm" => "Are you sure?"%></td>
@@ -39,5 +39,5 @@
   <h4>Body</h4>
   <p class="index-p"><%= f.text_area :body %></p>
 
-  <p class="index-p"><%= f.submit 'Create Book' %></p>
+  <p class="index-p2"><%= f.submit 'Create Book' %></p>
 <% end %>
